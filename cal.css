@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --underweight: orange;
+    --normal: green;
+    --overweight: lightcoral;
+    --obese: crimson;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Mitr", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background: url(picture/ayaka.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    gap: 1rem;
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0px 60px rgb(169, 192, 255);
+}
+
+.calculator {
+    display: grid;
+    gap: 1rem;
+}
+
+.calculator div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.calculator label {
+    flex: 0 1 120px;
+    font-weight: 500;
+}
+
+.calculator input {
+    flex: 1;
+    border: 2px solid rgb(164, 164, 164);
+    border-radius: 5px;
+    padding: 10px;
+    outline-color: rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    text-align: center;
+}
+
+.calculator button {
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background: rgb(148, 94, 255);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.calculator .reset {
+    background: rgb(36, 36, 36);
+}
+
+.calculator button:hover {
+    filter: brightness(120%);
+}
+
+.output {
+    text-align: center;
+    margin-top: .1rem;
+}
+
+.output #bmi {
+    font-size: 64px;
+}
+
+.output #desc strong {
+    text-transform: uppercase;
+}
+
+.bmi-scale {
+    display: flex;
+}
+
+.bmi-scale div {
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+}
+
+.bmi-scale h4 {
+    font-size: 0.65rem;
+    margin-top: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.underweight {
+    color: var(--underweight);
+}
+
+.healthy {
+    color: var(--normal);
+}
+
+.overweight {
+    color: var(--overweight);
+}
+
+.obese {
+    color: var(--obese);
+}
